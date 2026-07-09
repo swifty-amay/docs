@@ -4,17 +4,11 @@ let languages: [Language] = [
     Language(
         .english,
         isDefault: true,
-        // Docs-specific strings (not part of Kiln's built-in chrome) looked up
-        // in the navbar/footer templates via `#t("key")`. English is the
-        // default language, so these double as the fallback for any key a
-        // translation below hasn't provided yet.
         customStrings: [
-            // Shared design-partial config. Same across all languages, so defined
-            // only in English (the default); every locale falls back to these.
-            "siteId": "docs",                // shared footer link-target branching
-            "head.defaultOgType": "article", // og:type for non-home doc pages
-            "head.homeSuffix": "",           // appended to site.name on the home page
-            "head.titleSeparator": " · ",    // between page title and site.name
+            "siteId": "docs",
+            "head.defaultOgType": "article",
+            "head.homeSuffix": "",
+            "head.titleSeparator": " · ",
             "tagline": "Vapor provides a safe, performant and easy to use foundation to build HTTP servers, backends and APIs in Swift",
             "footer.tagline": "Vapor provides a safe, performant and easy to use foundation to build HTTP servers, backends and APIs in Swift",
             "joinDiscord": "Join our Discord",
@@ -36,6 +30,7 @@ let languages: [Language] = [
         image: "assets/og/en-2x.png",
         localisation: .init(
             searchPlaceholder: "Quick search",
+            searchPrompt: "Enter your search…",
             tableOfContentsTitle: "Table of contents"
         )
     ),
@@ -97,6 +92,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "Suchen",
             searchNoResults: "Keine Ergebnisse gefunden",
+            searchPrompt: "Suchbegriff eingeben…",
             tableOfContentsTitle: "Auf dieser Seite",
             previousPage: "Zurück",
             nextPage: "Weiter",
@@ -199,6 +195,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "Buscar",
             searchNoResults: "No se encontraron resultados",
+            searchPrompt: "Introduce tu búsqueda…",
             tableOfContentsTitle: "En esta página",
             previousPage: "Anterior",
             nextPage: "Siguiente",
@@ -298,6 +295,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "Rechercher",
             searchNoResults: "Aucun résultat trouvé",
+            searchPrompt: "Saisissez votre recherche…",
             tableOfContentsTitle: "Sur cette page",
             previousPage: "Précédent",
             nextPage: "Suivant",
@@ -404,6 +402,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "Cerca",
             searchNoResults: "Nessun risultato trovato",
+            searchPrompt: "Inserisci la tua ricerca…",
             tableOfContentsTitle: "In questa pagina",
             previousPage: "Precedente",
             nextPage: "Successivo",
@@ -495,6 +494,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "検索",
             searchNoResults: "結果が見つかりません",
+            searchPrompt: "検索キーワードを入力…",
             tableOfContentsTitle: "このページの内容",
             previousPage: "前へ",
             nextPage: "次へ",
@@ -592,6 +592,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "검색",
             searchNoResults: "결과를 찾을 수 없습니다",
+            searchPrompt: "검색어를 입력하세요…",
             tableOfContentsTitle: "이 페이지에서",
             previousPage: "이전",
             nextPage: "다음",
@@ -685,6 +686,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "Zoeken",
             searchNoResults: "Geen resultaten gevonden",
+            searchPrompt: "Voer je zoekopdracht in…",
             tableOfContentsTitle: "Op deze pagina",
             previousPage: "Vorige",
             nextPage: "Volgende",
@@ -786,6 +788,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "Szukaj",
             searchNoResults: "Nie znaleziono wyników",
+            searchPrompt: "Wpisz wyszukiwane hasło…",
             tableOfContentsTitle: "Na tej stronie",
             previousPage: "Poprzednia",
             nextPage: "Następna",
@@ -890,6 +893,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "搜索",
             searchNoResults: "未找到结果",
+            searchPrompt: "输入搜索内容…",
             tableOfContentsTitle: "本页内容",
             previousPage: "上一页",
             nextPage: "下一页",
@@ -996,6 +1000,7 @@ let languages: [Language] = [
         localisation: .init(
             searchPlaceholder: "بحث",
             searchNoResults: "لا توجد نتائج",
+            searchPrompt: "أدخل بحثك…",
             tableOfContentsTitle: "في هذه الصفحة",
             previousPage: "السابق",
             nextPage: "التالي",
