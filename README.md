@@ -14,7 +14,7 @@ docker compose up
 3. then open from the browser on the port 8000 
 e.g.  
 ```
-http://127.0.1.1:8000
+http://127.0.0.1:8000
 ```
 
 ## Contributing
