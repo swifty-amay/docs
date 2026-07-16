@@ -17,7 +17,7 @@ e.g.
 http://127.0.0.1:8000
 ```
 
-#Start with SPM
+# Start with SPM
 * Prerequisite for this setup, you must have swift and python installed on the system
 
 1. Clone the repo
