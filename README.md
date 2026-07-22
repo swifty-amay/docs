@@ -18,26 +18,24 @@ http://127.0.0.1:8000
 ```
 
 # Start with SPM
-* Prerequisite for this setup, you must have swift and python installed on the system
+* Prerequisite for this setup, you must have swift installed on the system
 
 1. Clone the repo
 
-2. then run
+2. the move to the folder where you cloned the repo
 ```
-swift run VaporDocs
+cd /path/to/folder
 ```
-3. then
+
+3. then run
 ```
-cd site
+swift run kiln serve
 ```
-4. then
-```
-python3 -m http.server 8000
-```
+
 4. finally open from the browser on the port
 e.g
 ```
-http://127.0.0.1:8000
+http://127.0.0.1:8080
 ```
 
 
