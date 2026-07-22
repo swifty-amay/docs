@@ -17,30 +17,6 @@ e.g.
 http://127.0.0.1:8000
 ```
 
-# Start with SPM
-* Prerequisite for this setup, you must have swift and python installed on the system
-
-1. Clone the repo
-
-2. then run
-```
-swift run VaporDocs
-```
-3. then
-```
-cd site
-```
-4. then
-```
-python3 -m http.server 8000
-```
-4. finally open from the browser on the port
-e.g
-```
-http://127.0.0.1:8000
-```
-
-
 ## Contributing
 
 If you want to add information to the docs or have found any mistakes you wish to fix, feel free to create a PR  for the change.
